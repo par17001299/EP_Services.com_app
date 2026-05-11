@@ -1,0 +1,128 @@
+/* Background */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    font-family: "Segoe UI", Roboto, sans-serif;
+    color: #333;
+}
+
+/* Topbar */
+.topbar {
+    width: 100%;
+    height: 60px;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.topbar .brand {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ff7b47;
+}
+
+.topbar .user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #444;
+}
+
+.topbar button {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    background: #ff7b47;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.topbar button:hover {
+    background: #ff956d;
+}
+
+/* Dashboard container */
+.dashboard-container {
+    padding: 30px;
+}
+
+/* Grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 25px;
+}
+
+/* Cards */
+.dash-card {
+    background: rgba(255,255,255,0.85);
+    border-radius: 18px;
+    padding: 25px;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    animation: fadeIn 0.6s ease-out;
+}
+
+.dash-card h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff7b47;
+}
+
+/* Wide card */
+.dash-card.wide {
+    grid-column: span 2;
+}
+
+/* Quick actions */
+.actions button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #4ea1ff;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.actions button:hover {
+    background: #6bb6ff;
+}
+
+/* Overview list */
+.overview-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.overview-list li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #444;
+}
+
+/* Placeholder */
+.placeholder {
+    opacity: 0.6;
+    font-style: italic;
+    color: #777;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}

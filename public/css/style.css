@@ -1,0 +1,280 @@
+/* ---------------------------------------------------
+   GLOBAL — Bright & Cheerful Theme
+--------------------------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ff7b47;
+}
+
+button {
+  background: #ff7b47;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.25s ease;
+}
+
+button:hover {
+  background: #ff956d;
+  transform: translateY(-2px);
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255,255,255,0.9);
+  transition: 0.2s ease;
+}
+
+input:focus, select:focus {
+  border-color: #ff7b47;
+  background: #fff;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* ---------------------------------------------------
+   NAVIGATION — Bright Topbar
+--------------------------------------------------- */
+nav {
+  background: rgba(255,255,255,0.8);
+  color: #333;
+  padding: 14px 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ff7b47;
+}
+
+.nav-links a {
+  margin-left: 25px;
+  color: #444;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.2s ease;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.nav-links a:hover {
+  background: #ffe1d2;
+  color: #ff7b47;
+}
+
+/* ---------------------------------------------------
+   TABLES — Bright Glass Cards
+--------------------------------------------------- */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.85);
+  border-radius: 14px;
+  overflow: visible !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  backdrop-filter: blur(10px);
+}
+
+.user-table th {
+  background: #ffe1d2;
+  padding: 14px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ff7b47;
+}
+
+.user-table td {
+  padding: 14px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  font-size: 14px;
+  position: relative;
+  overflow: visible !important;
+  color: #333;
+}
+
+.user-table tr:hover {
+  background: rgba(255,255,255,0.6);
+}
+
+/* ---------------------------------------------------
+   BADGES — Bright Status Tags
+--------------------------------------------------- */
+.badge {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+}
+
+.badge-active {
+  background-color: #28c76f;
+}
+
+.badge-inactive {
+  background-color: #ea5455;
+}
+
+.badge-warning {
+  background-color: #ff9f43;
+  color: #212529;
+}
+
+.badge-locked {
+  background-color: #6c757d;
+}
+
+/* ---------------------------------------------------
+   DROPDOWN ACTION MENU — Bright Style
+--------------------------------------------------- */
+.actions-cell {
+  white-space: nowrap;
+  overflow: visible !important;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 50;
+}
+
+.dropdown-btn {
+  background: #4ea1ff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.dropdown-btn:hover {
+  background: #6bb6ff;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 110%;
+  background: white;
+  min-width: 160px;
+  padding: 6px 0;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  z-index: 9999;
+}
+
+.dropdown-menu div {
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.15s ease;
+}
+
+.dropdown-menu div:hover {
+  background: #ffe1d2;
+  color: #ff7b47;
+}
+
+.dropdown.show .dropdown-menu {
+  display: block !important;
+}
+
+/* ---------------------------------------------------
+   CARD WRAPPER — Bright Glass Cards
+--------------------------------------------------- */
+.card {
+  background: rgba(255,255,255,0.85);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+  backdrop-filter: blur(10px);
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+  background: rgba(255,255,255,0.9);
+}
+
+.form-actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.form-actions button {
+  padding: 12px 18px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+/* Password Strength Meter */
+.strength-meter {
+    height: 10px;
+    width: 100%;
+    background: #eee;
+    border-radius: 6px;
+    margin-top: 6px;
+    overflow: hidden;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    transition: 0.3s ease;
+    border-radius: 6px;
+}
+
+.strength-text {
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+}
